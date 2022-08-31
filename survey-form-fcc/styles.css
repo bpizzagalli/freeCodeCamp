@@ -1,0 +1,101 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+*{
+    box-sizing: border-box;
+}
+
+.img1{
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    background-image: linear-gradient( 115deg, rgba(131, 123, 55, 0.8), rgba(136, 136, 206, 0.7) ), 
+    url(./images/genteestudiando.jpg);
+    
+
+}
+
+
+.titulo, .subtitulo{
+    font-family:"Roboto";
+    color:black;
+
+
+    
+}
+
+.textosurvey{
+   /* width:700px;*/
+    padding:40px;
+
+
+}
+
+form{
+    margin-top:50px;
+    font-size:24px;
+    background: rgba(0, 0, 0, 0.5);
+    color:rgb(202, 159, 110);
+    width: 50%;
+
+    
+}
+
+label{
+    display:block;
+    margin:0.5rem 0;
+}
+
+input, select, button, textarea{
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    padding: 0.4rem;
+    
+}
+
+
+.controlform{
+    width:100%;
+    color: #495057;
+}
+
+
+.labelpag{
+    padding-top:15px;
+}
+
+.paracheckbox{
+    margin-right:9px;
+}
+
+.paratextarea{
+    resize:vertical;
+    width:100%;
+    text-align: start;
+    font-size:18px;
+    min-height: 120px;
+    max-height: 400px;
+}
+
+.submitear{
+    text-align: center;
+    width: 100%;
+    margin-top:20px;
+}
+
+.comentario{
+    margin-top:18px;
+    margin-bottom: 10px;
+}
+
+@media(max-width:600px){
+    form{
+        width:100%;
+    }
+}
+

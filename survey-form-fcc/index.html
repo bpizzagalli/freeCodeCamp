@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Survey</title>
+    <meta name="description" content="mi pagina" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body class="img1">
+    <h1 class="titulo">free Code Camp Survey Form</h1>
+    <p class="subtitulo">
+      Thank you for taking the time to help us improve the platform
+    </p>
+
+    <form>
+      <div class="textosurvey">
+        <label id="namelabel" for="name">Name</label>
+        <input
+          class="controlform"
+          id="name"
+          name="name"
+          type="text"
+          required
+          placeholder="Enter your name"
+        />
+
+        <label id="emaillabel" for="email">Email</label>
+        <input
+          class="controlform"
+          id="email"
+          name="email"
+          type="email"
+          required
+          placeholder="Enter your email"
+        />
+        <label id="agelabel" for="age">Age (optional)</label>
+        <input
+          class="controlform"
+          id="age"
+          name="age"
+          placeholder="Enter your age"
+          type="number"
+          min="1"
+          max="120"
+        />
+        <label id="rolelabel" for="role"
+          >Which option best describes your current role?</label
+        >
+        <select class="controlform" id="role" name="role" required>
+          <option disabled selected value>Select role...</option>
+          <option value="fulltimejob">Full time job</option>
+          <option value="fulltimelearner">Full time learner</option>
+          <option value="nottosay">Prefer not to say</option>
+          <option value="other">Other</option>
+        </select>
+        <p class="psurvey">Recomendarias mi pagina a otra persona? (porfa)</p>
+       <label>
+        <input name="userresp" type="radio" class="resp" checked> Si obvio</input> 
+        </label>
+        <label>
+            <input name="userresp" type="radio" class="resp"> No ni ahi</input> 
+        </label>
+        <label id="paglabel" for="pag" class="labelpag">Que es lo que mas te gusta de mi pagina</label>
+            <select class="controlform" id="pag" name="pag">
+                <option disabled selected value>Selecciona algo...</option>
+                <option value="queandarebien">Que anda re bien</option>
+                <option value="lomalaquees">Lo mala que es</option>
+            </select>
+           
+            <p>Que mejorarias de la pagina? (Podes elegir varias)</p>
+            <label>
+                <input type="checkbox" class="paracheckbox"> Lo mal hecha que esta </input>
+            </label>
+            <label>
+                <input type="checkbox" class="paracheckbox"> Que no sirve para nada</input>
+            </label>
+            <label>
+                <input type="checkbox" class="paracheckbox"> xd</input>
+            </label>
+
+            <p class="comentario">Algun comentario?</p>
+            <textarea class="paratextarea" placeholder="Escribi tu comentario aca...">
+            </textarea>
+            
+            <button class="submitear">Enviar</button>
+
+        
+
+
+      </div>
+    </form>
+  </body>
+</html>
