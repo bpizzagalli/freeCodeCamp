@@ -10,7 +10,6 @@ sales = pd.read_csv(
 
 print(sales.head())
 
-
 # What's the mean of Customers_Age?
 print(sales['Customer_Age'].mean())
 
@@ -43,7 +42,7 @@ sales.plot(kind='scatter', x='Order_Quantity', y='Profit', figsize=(10,6))
 sales[['Profit', 'Country']].boxplot(by='Country', figsize=(10,6))
 
 #Can you see any relationship between the Customer_Age per Country?
-sales[['Customer_Age', 'Country']].boxplot(by='Country', figsize=(10,6))
+#sales[['Customer_Age', 'Country']].boxplot(by='Country', figsize=(10,6))
 
 #Add and calculate a new Calculated_Date column
 sales['Calculated_Date'] = sales[['Day', 'Month', 'Year']].apply(lambda x:'{}-{}-{}'.format(x[0],x[1],x[2]), axis=1)
