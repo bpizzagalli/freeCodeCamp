@@ -118,10 +118,17 @@ ax.axvline(df['film_daily_rental_rate'].mean(), color='red')
 #List 10 films with the lowest daily rental rate
 df.loc[df['film_daily_rental_rate'] == df['film_daily_rental_rate'].min()].head(10)
 
+#List 10 films with the highest daily rental rate
+df.loc[df['film_daily_rental_rate'] == df['film_daily_rental_rate'].max()].head(10)
 
+#How many rentals were made in Lethbridge city?
+df.loc[df['rental_store_city'] == 'Lethbridge'].shape[0]
 
+#How many rentals were made in Woodridge city with rental duration higher than 5 days?
+df.loc[(df['rental_store_city'] == 'Woodridge') & (df['film_rental_duration'] > 5)].shape[0]
 
-
+#How many rentals were made at the store with id 2 or with replacement cost lower than 10.99 USD?
+df.loc[(df['store_id'] == 2) | (df['film_replacement_cost'] < 10.99)].shape[0]
 
 
 
