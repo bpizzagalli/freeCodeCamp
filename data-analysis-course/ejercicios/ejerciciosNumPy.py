@@ -2,7 +2,7 @@ import sys
 import numpy as np
 print(np.__version__)
 
-""" #Create a numpy array of size 10, filled with zeros.
+#Create a numpy array of size 10, filled with zeros.
 
 zeros=np.zeros(10)
 print(zeros)
@@ -17,10 +17,10 @@ print(mat22)
 
 #Create a numpy matrix of 3*2 float numbers, filled with ones.
 mat32=np.ones([3,2], dtype=float)
-print(mat32) """
+print(mat32) 
 
 
-""" 
+
 X= np.arange(5, dtype=int)
 
 #Given the X numpy array, create a new numpy array with the same shape and type as X, filled with ones.
@@ -100,7 +100,7 @@ print(X3[1:-1])
 print(X3[::-1])
 
 #Given the X numpy array, show the elements in an odd position
-print(X3[::2]) """
+print(X3[::2]) 
 
 #Given the X4 numpy matrix, show the first row elements
 X4=np.array([
@@ -109,9 +109,9 @@ X4=np.array([
     [7,8,9]])
 
 
- print(X4[0])
+print(X4[0])
 
- #Given the X4 numpy matrix, show the last row elements
+#Given the X4 numpy matrix, show the last row elements
 print(X4[-1])
 
 #Given the X4 numpy matrix, show the first element on first row
