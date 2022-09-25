@@ -2,8 +2,7 @@ import sys
 import numpy as np
 print(np.__version__)
 
-#Create a numpy array of size 10, filled with zeros.
-
+""" #Create a numpy array of size 10, filled with zeros.
 zeros=np.zeros(10)
 print(zeros)
 
@@ -211,9 +210,46 @@ X15 = np.array([-1, 2, 0, -4, 5, 6, 0, 0, -9, 10])
 mask15 = ((X15 == 2) | (X15 == 10))
 print(X15[mask15])
 
+ """
 
+#LOGIC FUNCTIONS
 
+#Given the X16 numpy array, return True if none of its elements is zero
+X16 = np.array([-1, 2, 0, -4, 5, 6, 0, 0, -9, 10])
+print(X16.all())
 
+#Given the X17 numpy array, return True if any of its elements is zero
+X17 = np.array([-1, 2, 0, -4, 5, 6, 0, 0, -9, 10])
+print(X17.any())
 
+#Given the X18 numpy array, show the sum of its elements
+X18 = np.array([3, 5, 6, 7, 2, 3, 4, 9, 4])
+print(X18.sum())
+
+#Given the X19 numpy array, show the mean value of its elements
+X19 = np.array([1, 2, 0, 4, 5, 6, 0, 0, 9, 10])
+print(X19.mean())
+
+#Given the X20 numpy matrix, show the sum of its columns
+X20 = np.array([
+    [1,   2,  3,  4],
+    [5,   6,  7,  8],
+    [9,  10, 11, 12],
+    [13, 14, 15, 16]
+])
+print(X20.sum(axis=0)) #axis=0 suma por COLUMNAS, axis=1 suma por FILAS
+
+#Given the X21 numpy matrix, show the mean value of its rows
+X21 = np.array([
+    [1,   2,  3,  4],
+    [5,   6,  7,  8],
+    [9,  10, 11, 12],
+    [13, 14, 15, 16]
+])
+print(X21.mean(axis=1))
+
+#Given the X22 numpy array, show the max value of its elements
+X22 = np.array([1, 2, 0, 4, 5, 6, 0, 0, 9, 10])
+print(X22.max())
 
 
