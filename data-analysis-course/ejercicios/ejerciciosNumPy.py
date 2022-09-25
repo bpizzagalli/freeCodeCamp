@@ -109,7 +109,7 @@ X4=np.array([
     [7,8,9]])
 
 
-""" print(X4[0])
+ print(X4[0])
 
  #Given the X4 numpy matrix, show the last row elements
 print(X4[-1])
@@ -204,7 +204,7 @@ print(X13[X13>5])
 #Given the X14 numpy array, get numbers higher than the elements mean
 X14 = np.array([-1, 2, 0, -4, 5, 6, 0, 0, -9, 10])
 print(X14.mean())
-print(X14[X14>X14.mean()]) """
+print(X14[X14>X14.mean()]) 
 
 #Given the X15 numpy array, get numbers equal to 2 or 10
 X15 = np.array([-1, 2, 0, -4, 5, 6, 0, 0, -9, 10])
